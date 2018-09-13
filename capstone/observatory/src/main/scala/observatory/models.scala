@@ -2,6 +2,7 @@ package observatory
 
 /**
   * Introduced in Week 1. Represents a location on the globe.
+  *
   * @param lat Degrees of latitude, -90 ≤ lat ≤ 90
   * @param lon Degrees of longitude, -180 ≤ lon ≤ 180
   */
@@ -40,3 +41,8 @@ case class CellPoint(x: Double, y: Double)
   */
 case class Color(red: Int, green: Int, blue: Int)
 
+case class StationRecord(id: String, lat: Double, lon: Double)
+
+case class TemperatureRecord(id: String, year: Year, month: Month, day: Day, temperature: Temperature)
+
+case class StationTemperatures(id: String, lat: Double, lon: Double, year: Year, month: Month, day: Day, temperature: Temperature)

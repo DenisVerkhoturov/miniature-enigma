@@ -1,10 +1,8 @@
 package observatory
 
-import org.scalatest.FunSuite
+import org.scalatest.WordSpec
 import org.scalatest.prop.Checkers
 
-import scala.collection.concurrent.TrieMap
-
-trait InteractionTest extends FunSuite with Checkers {
+trait InteractionTest extends WordSpec with Checkers {
 
 }
